@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Sticky Menu Bar</title>
+        <style>
+            body{
+                margin: 0px;
+            }
+            #header{
+                text-align: center;
+            }
+            #logo{
+                height: auto;
+                width: 250px;
+            }
+            #menu-bar{
+                text-align: center;
+                background-color: blue;
+            }
+            #menu-bar li{
+                display: inline-block;
+                padding: 10px 15px;
+                color: mintcream;
+                font-size: 20px;
+                font-weight: bold;
+            }
+            #container{
+                text-align: center;
+                padding: 20px 40px;
+            }
+            #imgc{
+                width: auto;
+                height: auto;
+            }
+            .sticky{
+                position:fixed;
+                top:0;
+                width: 100%;
+            }
+        </style>
+    </head>
+    <body>
+        <div id="header">
+            <img src="download.jpg" id="logo" alt="">
+        </div>
+        <nav id="menu-bar">
+            <li>Home</li>
+            <li>About Us</li>
+            <li>Our Team</li> 
+            <li>Client</li>
+            <li>Contact Us</li>
+        </nav>
+        <div id="container">
+            <h1>About Us</h1>
+            <img id="imgc" src="hospital.jpg" alt="">
+            <p>
+                Writing a 500-word essay is a very simple task to do. But things might get complicated if you do not follow a standard way of writing.
+
+The following are the steps you should consider while writing a 500-word essay.
+
+1. Understanding the Requirements
+Before you start writing an essay, the first thing you should do is to understand the requirements provided by your instructor.
+
+Understanding the requirements will help you to complete your essay without any mess and up to the mark. Proceeding according to the requirements will keep you composed through the essay writing process.
+
+2. Brainstorm
+Once you have understood all the requirements, the next step is to think of some interesting ideas. Brainstorming helps you to use the creativity of your mind especially when it comes to essay writing.
+
+Note down all the elements that you come up with within your mind. Make a rough list of all the ideas and later on organize them to compose an effective essay.
+
+3. Choose a Topic
+After you have understood all the instructions and spend enough time brainstorming different ideas, it is time you choose a topic.
+
+Always choose a unique and interesting topic. A good topic is highly responsible for making your essay attractive. Also, try that you have selected a topic that is not overdone. An overdone and repetitive topic would make your audience boring.
+
+For a 500-word essay, a topic must be very interesting as you have to make the essay interesting within a very limited word count. Make sure that you choose such a topic about which you can easily collect evidence and facts to support it and make it stronger.
+
+4. Research
+Conducting research on the selected topic is an essential part of essay writing. The research will help you collect all the relevant information that is necessary to make your essay stronger.
+
+Also, researching a topic will make the writing process very smooth for you as you will have all the information that is needed for the essay.
+
+Collect all information only from reliable sources as you don’t want to misguide your audience.
+
+5. Create an Outline for A 500-Word Essay
+The outline is an element of an essay that can save time, make things easy, and earn a better grade.
+
+Just write down all the main features and arguments you want to discuss in your 500-word essay. This will help you to get back on track if you forget the things you wanted to write about.
+
+Moreover, your essay will always be structured and clear, so the audience will read it easily and will follow your thoughts without any challenges.
+
+6. Writing Process
+Since you have your topic and all the information related to the topic thus, you are all set to start writing your essay.
+
+Essay writing starts with writing an introduction. As you are writing an essay of 500 words, an introduction should have only one paragraph. In that paragraph, you should explain the main topic and its importance and also the thesis statement.
+
+After introducing the topic, state the body paragraph, and explain all the key elements in it. Usually, there are three body paragraphs in such essays to explain different key elements.
+
+Don’t forget to add transition words, which will make the text smooth and readable. Also, ensure that you use the standard font styles, preferably Arial or Times New Roman.
+
+The same as an introduction, your conclusion should be one paragraph long. Summarize all the key elements in a very precise way and do not add any new points.
+
+7. Revision and Proofreading
+Devoting some extra time to proofreading, revision, and editing can make your essay a whole lot better.
+
+This is the simplest thing to do, but most students still skip it and make the biggest mistake. Proofreading ensures that there are no mistakes left behind in your document.
+            </p> 
+        </div>
+        
+        <script>
+            window.addEventListener('scroll',function(){
+                let navbar = document.getElementById("menu-bar");
+                if(window.pageYOffset >= 191.1){
+                    navbar.classList.add('sticky');
+                }
+                else{
+                    navbar.classList.remove('sticky');
+                }
+            });
+
+        </script>
+    </body>
+</html>
